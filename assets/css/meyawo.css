@@ -567,6 +567,16 @@ pre code {
     max-width: 540px;
   }
 }
+.blog-card-content {
+  display: flex;
+}
+
+.blog-card-line {
+  width: 1px;
+  background-color: #ccc; /* You can adjust the color of the line */
+  margin: 0 20px; /* Adjust the spacing between the image and text */
+}
+
 
 @media (min-width: 768px) {
   .container {

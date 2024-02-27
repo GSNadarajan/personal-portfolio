@@ -17,28 +17,38 @@
         data-offset="40"
         id="home"
     >
-    <!-- Model start-->
-    <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="successModalLabel">Message Sent Successfully!</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <!-- <div class="modal-body">
+        <!-- Model start-->
+        <div
+            class="modal fade"
+            id="successModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="successModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="successModalLabel">Message Sent Successfully!</h5>
+                        <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                        >
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <!-- <div class="modal-body">
                     Your message has been sent successfully. I'll get back to you soon!
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div> -->
+                </div>
             </div>
         </div>
-    </div>
-    
-    <!-- Model end-->
-    
+        <!-- Model end-->
         <!-- Page Navbar -->
         <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
             <div class="container">
@@ -109,10 +119,9 @@
                         <p>
                             Currently interning as a software developer at Skillrank, I am honing my skills in creating end-to-end web applications. My passion for learning led me to explore cloud computing on AWS, adding a layer of scalability and efficiency to my projects.
                         </p>
-                       
                         <p>Let's collaborate to transform your ideas into impactful digital solutions!</p>
                     </p>
-                    <button class="btn-rounded btn btn-outline-primary mt-4">Download CV</button>
+                    <button class="btn-rounded btn btn-outline-primary mt-4" onclick="downloadResume()">Download CV</button>
                 </div>
             </div>
             <!-- end of about wrapper -->
@@ -171,8 +180,7 @@
     <!-- portfolio section -->
     <section class="section" id="portfolio">
         <div class="container text-center">
-            <p class="section-subtitle">What I Did ?</p>
-            <h6 class="section-title mb-6">Portfolio</h6>
+            <h6 class="section-title mb-6">Projects</h6>
             <!-- row -->
             <div class="row">
                 <div class="col-md-4">
@@ -180,7 +188,8 @@
                         <img src="assets/imgs/folio-1.jpg" class="portfolio-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4>Web Designing
+                                <h4>
+                                    Web Designing
                                 </h5>
                                 <p class="font-weight-normal">Category: Web Templates</p>
                             </span>
@@ -197,7 +206,8 @@
                         >
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4>Web Designing
+                                <h4>
+                                    Web Designing
                                 </h5>
                                 <p class="font-weight-normal">Category: Web Templates</p>
                             </span>
@@ -214,7 +224,8 @@
                         >
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
-                                <h4>Web Designing
+                                <h4>
+                                    Web Designing
                                 </h5>
                                 <p class="font-weight-normal">Category: Web Templates</p>
                             </span>
@@ -227,7 +238,6 @@
         <!-- end of container -->
     </section>
     <!-- end of portfolio section -->
-
     <!-- section -->
     <section class="section-sm bg-primary">
         <!-- container -->
@@ -241,13 +251,13 @@
                 <div class="col-sm offset-sm-2 offset-md-3">
                     <!-- <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nadarajangs31@gmail.com" target="_blank" class="btn btn-lg my-font btn-light rounded">Hire Me</a>
                      -->
-                     <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nadarajangs31@gmail.com" 
-                     target="_blank" 
-                     class="btn btn-lg my-font btn-light rounded" 
-                     onclick="showSuccessModal()">Hire Me</a>
+                    <a
+                        href="https://mail.google.com/mail/?view=cm&fs=1&to=nadarajangs31@gmail.com"
+                        target="_blank"
+                        class="btn btn-lg my-font btn-light rounded"
+                        onclick="showSuccessModal()"
+                    >Hire Me</a>
                 </div>
-                
-                
             </div>
             <!-- end of row -->
         </div>
@@ -300,74 +310,33 @@
     <section class="section" id="blog">
         <!-- container -->
         <div class="container text-center">
-            <p class="section-subtitle">Recent Posts?</p>
-            <h6 class="section-title mb-6">Blog</h6>
+            <h6 class="section-title mb-6">My Blog</h6>
             <!-- blog-wrapper -->
             <div class="blog-card">
-                <div class="blog-card-header">
-                    <img src="assets/imgs/img-1.jpg" class="blog-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                </div>
-                <div class="blog-card-body">
-                    <h5 class="blog-card-title">Consectetur adipisicing elit
-                    </h6>
-                    <p class="blog-card-caption">
-                        <a href="#">By: Admin</a>
-                        <a href="#">
-                            <i class="ti-heart text-danger"></i> 234
+                <div class="blog-card-content">
+                    <div class="blog-card-header">
+                        <img src="assets/imgs/blog.png" class="blog-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="blog-card-line"></div>
+                    <div class="blog-card-body">
+                        <h5 class="blog-card-title">
+                            Path-Based Routing in AWS CloudFront
+                        </h5>
+                        <p class="blog-card-caption"></p>
+                        <p>Explore the seamless integration of multiple Angular applications with AWS Amplify and CloudFront through path-based routing in this engaging blog post.</p>
+                        <p class="mt-4">Achieve clear and concise URLs for your Angular applications with Amplify and CloudFront's path-based routing.</p>
+                
+                        <a href="https://medium.com/@nadarajangs31/achieving-path-based-routing-with-amplify-url-and-cloudfront-for-multiple-angular-applications-a31095fced8b" class="blog-card-link font-weight-bold" target="_blank">
+                            Read the full blog post
+                            <i class="ti-angle-double-right"></i>
                         </a>
-                        <a href="#">
-                            <i class="ti-comment"></i> 123
-                        </a>
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet nesciunt qui sit velit
-                            delectus voluptates, repellat ipsum culpa id deleniti. Rerum debitis facilis accusantium
-                            neque numquam mollitia modi quasi distinctio.
-                    </p>
-                    <p>
-                        <b>Necessitatibus nihil impedit! Ex nisi eveniet, dolor aliquid consequuntur repudiandae.</b>
-                    </p>
-                    <p>
-                        Magnam in repellat enim harum omnis aperiam! Explicabo illo, commodi, dolor blanditiis
-                            cupiditate harum nisi vero accusamus laudantium voluptatibus dolores quae obcaecati.
-                    </p>
-                    <a href="#" class="blog-card-link">Read more
-                        <i class="ti-angle-double-right"></i>
-                    </a>
+                    </div>
                 </div>
             </div>
+            
+            
             <!-- end of blog wrapper -->
             <!-- blog-wrapper -->
-            <div class="blog-card">
-                <div class="blog-card-header">
-                    <img src="assets/imgs/img-2.jpg" class="blog-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                </div>
-                <div class="blog-card-body">
-                    <h5 class="blog-card-title">Explicabo illo
-                    </h6>
-                    <p class="blog-card-caption">
-                        <a href="#">By: Admin</a>
-                        <a href="#">
-                            <i class="ti-heart text-danger"></i> 456
-                        </a>
-                        <a href="#">
-                            <i class="ti-comment"></i> 264
-                        </a>
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit excepturi laborum enim,
-                            vitae ipsam atque eum, ad iusto consequuntur voluptas, esse doloribus. Perferendis porro
-                            quisquam vitae exercitationem aliquid, minus eos laborum repudiandae, cumque debitis iusto
-                            omnis praesentium? Laborum placeat sit adipisci illum tempore maxime, esse qui quae?
-                            Molestias excepturi corporis similique doloribus. Esse vitae earum architecto nulla non
-                            dolores illum at perspiciatis quod, et deleniti cupiditate reiciendis harum facere, delectus
-                            eum commodi soluta distinctio sit repudiandae possimus sunt. Ipsum, rem.
-                    </p>
-                    <a href="#" class="blog-card-link">Read more
-                        <i class="ti-angle-double-right"></i>
-                    </a>
-                </div>
-            </div>
             <!-- end of blog wrapper -->
         </div>
         <!-- end of container -->
@@ -422,8 +391,10 @@
         <footer class="footer">
             <p class="mb-0">
                 Copyright
-                <script>document.write(new Date().getFullYear())</script> &copy;
-                <a href="http://www.devcrud.com">DevCRUD</a> Distribution
+                <script>document.write(new Date().getFullYear())</script>
+                &copy;
+                <a href="http://www.devcrud.com">DevCRUD</a>
+                Distribution
                 <a href="https://themewagon.com">ThemeWagon</a>
             </p>
             <div class="social-links text-right m-auto ml-sm-auto">
@@ -459,6 +430,20 @@
     <script>
         function showSuccessModal() {
             $('#successModal').modal('show');
+        }
+    </script>
+    <script>
+        function downloadResume() {
+            // Replace 'path/to/your/resume.pdf' with the actual path to your resume file
+            var resumePath = './Resume.pdf';
+            
+            // Creating a temporary anchor element to trigger the download
+            var link = document.createElement('a');
+            link.href = resumePath;
+            link.download = 'YourResume.pdf'; // You can customize the downloaded file name
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
         }
     </script>
 </body>
