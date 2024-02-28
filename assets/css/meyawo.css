@@ -50,6 +50,12 @@
   box-sizing: border-box;
 }
 
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10px; /* Adjust this value to lift it up as needed */
+}
 html {
   font-family: sans-serif;
   line-height: 1.15;
